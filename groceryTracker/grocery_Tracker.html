@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Grocery Tracker</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="grocery_Tracker.css">
+    </head>
+    <body>
+
+        <div class="container mt-5">
+            <h1></h1>
+
+            <fieldset>
+                <legend>Calculate Grocery Tracker</legend>
+                <div class="mb-1">
+                    <label for="grocery1" class="form-label">Enter Grocery-1 Amount:  </label>
+                    <input type="number" id="grocery1" class="form-control"><br><br>
+                </div>
+
+
+            <div class="mb-1">
+                <label for="grocery2" class="form-label">Enter Grocery-2 Amount </label>
+                <input type="number" id="grocery2" class="form-control"><br><br>
+            </div>
+
+            <div class="mb-1">
+                <label for="grocery3" class="form-label">Enter Grocery-3 Amount </label>
+                <input type="number" id="grocery3" class="form-control"><br><br>
+            </div>
+            <button onclick="groceryTracker('grocery1', 'grocery2', 'grocery3')" class="btn btn-success">Calculate Total Amount</button><br><br>
+
+            <textarea type="text" id="result" rows="3" cols="2" class="form-control" readonly></textarea>
+            <!-- <p id="result" class="mt-3"></p> -->
+        </fieldset>
+        </div>
+
+        <script src="./grocery_Tracker.js"></script>
+        <!-- Bootstrap JS (optional, but needed for some Bootstrap features) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+</html>

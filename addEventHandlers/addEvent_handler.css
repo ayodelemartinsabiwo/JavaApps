@@ -1,0 +1,42 @@
+
+#moveArea {
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.form-control {
+    width: 19em;
+    border: solid 1.5px rgb(212, 211, 211);
+}
+
+#kdwn {
+    display:flex;
+}
+
+#kdata {
+    padding: 6px;
+    margin-left: 10px;
+    border: solid 1.5px rgb(212, 211, 211);
+    border-radius: 6.2px;
+}
+
+#kr {
+    padding: 6px;
+    margin-left: 2px;
+    border: solid 1.5px rgb(212, 211, 211);
+    border-radius: 6.2px;
+}
+
+#res {
+    width: 10em;
+    background-color: cornsilk;
+    color: black;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}

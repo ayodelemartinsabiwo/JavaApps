@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rectangle Area Calculator</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="addEvent_handler.css">
+    </head>
+    <body>
+        <div class="container mt-5">
+            <h1>Interactive Counter</h1>
+            <h2>Account Holder Name: Peter Parker</h2>
+            <p>Followers: <span id="countDisplay">0</span></p>
+            <hr>
+            <h2>Click one button to follow</h2>
+            <button id="butt" class="btn btn-success btn-sm">Follow</button>
+
+            <!-- Mouseover event -->
+
+            <p class="mt-4">&lt;-- Mouseover event (Move cusor over below box to see mouse coordinates X & Y) --&gt</p>
+            <div id="moveArea" class="mt-3" ></div>
+
+            <div>
+                <p class="mt-4" style="clear:both;">&lt;-- Keydown event (The box next to the input shows the total number key pressed) --&gt</p>
+
+                <div id="kdwn">
+                    <input type="text" id="keyInput" class="form-control" style="display: flex;">
+                    <span id="kdata"></span><span id="kr"></span>
+                </div>
+
+                <!-- Submit event, overriding default form submit -->
+                <p class="mt-5" style="clear:both;">&lt;-- Submit event (Upon submission, the listener triggers a function preventing default behavior )  --&gt</p>
+
+                <form id="myForm" class="mt-3">
+                    <input type="text" id="textInput">
+                    <input type="submit" id="textInput" value="Submit">
+                </form>
+                <p id="res"></p>
+
+                <p>----Focus event-----</p>
+                <input type="text" id="textFocus" placeholder="Click here">
+
+                <p class="mt-4"> --- Scroll event
+                    It occurs when ther is the detection of scrolling actions within the document.----</p>
+                <div style="height: 2000px; background-color: lightblue; padding: 10px;" class="mt-3">
+                    Scroll down
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <script src="./addEvent_handler.js"></script>
+        <!-- Bootstrap JS (optional, but needed for some Bootstrap features) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </body>
+</html>

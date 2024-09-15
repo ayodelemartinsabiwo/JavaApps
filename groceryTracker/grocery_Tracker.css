@@ -1,0 +1,22 @@
+fieldset {
+    /* Add your desired styles for fieldset here */
+    border: 2px solid #c9c8c8; /* Example: Change the border */
+    padding: 20px;          /* Example: Add padding */
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;    /* Example: Add margin at the bottom */
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+legend {
+    /* Add your desired styles for legend here */
+    font-weight: bold;     /* Example: Make the text bold */
+    padding: 0px 7px;       /* Example: Add padding to the left and right */
+    margin-bottom: 10px;
+    margin-top: -45px;  /* Example: Add margin at the bottom */
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    font-size: 30px;
+
+}
