@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Book Management System</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Book Management System</h1>
+        <label for="bookName" class="form-label">Book Name:</label><br>
+        <input type="text" id="bookName" class="form-control"><br><br>
+        <label for="authorName" class="form-label">Author Name:</label><br>
+        <textarea id="authorName" rows="4" class="form-control"></textarea><br><br>
+        <label for="bookDescription" class="form-label">Book Description</label><br>
+        <textarea id="bookDescription" rows="4" class="form-control"></textarea><br><br>
+        <label for="pagesNumber" class="form-label">No. of Pages Time</label><br>
+        <input type="number" id="pagesNumber" class="form-control"><br><br>
+        <button onclick="addBook()" class="btn btn-info btn-sm" style="margin-top: -55px;">Add Book</button>
+
+        <h2>Books</h2>
+        <div id="books">
+            <!-- books will be displayed here -->
+
+        </div>
+    </div>
+    <script src="./book_system.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

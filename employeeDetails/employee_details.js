@@ -20,8 +20,13 @@ const totalEmployees = employees.map((employee, index) => `<p>${employee.id}: ${
 //The reduce method iterates through each employee and accumulates their salaries
 //to calculate the total. The initial value of the accumulator (acc) is 0.
 function calculateTotalSalaries() {
+    // return employees.reduce((acc, employee) => acc + employee.salary, 0);
+
     const totalSalaries = employees.reduce((acc, employee) => acc + employee.salary, 0);
-    alert(`Total Salaries: $${totalSalaries}`);
+    const resultDiv = document.getElementById('employeesDetails');
+    //display alert in div rather browser alert
+    resultDiv.innerHTML = `<div class="alert alert-info">Total Salaries: $${totalSalaries}</div>`;
+    // alert(`Total Salaries: $${totalSalaries}`);
 }
 
 
