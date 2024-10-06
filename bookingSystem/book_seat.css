@@ -1,0 +1,32 @@
+/* CSS for styling the seats */
+.seating-chart {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    gap: 10px;
+    justify-content: center;
+}
+.seat {
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.booked {
+    background-color: #FF0000; /* Red */
+    cursor: not-allowed;
+    color: white; /* Set the text color to white for booked seats */
+}
+.available {
+    background-color: #7FFF00; /* Light Green */
+}
+.select-button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: #007BFF; /* Blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
