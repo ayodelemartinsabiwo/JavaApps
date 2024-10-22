@@ -8,10 +8,18 @@
         <div class="container mt-4">
             <h1>Weather Report</h1>
 
-            <form id="weatherForm">
-                <label for="city" >Enter City:</label>
-                <input type="text" id="city" name="city">
-                <button type="submit">Get Weather</button>
+            <form id="weatherForm" >
+                <label for="city" class="form-label">Enter City:</label>
+                <input type="text" id="city" name="city" class="form-control">
+                <button type="submit" class="btn btn-info mt-3">Get Weather</button>
+            </form>
+            <hr>
+            <form id="weatherForm2">
+                <label for="lat" class="form-label">Enter Lattitude:</label>
+                <input type="text" id="lat" name="lat" class="form-control">
+                <label for="lon" class="form-label">Enter Longtitude:</label>
+                <input type="text" id="lon" name="lon" class="form-control">
+                <button type="submit2" class="btn btn-info mt-3">Get Weather</button>
             </form>
 
             <div id="weatherInfo" class="mt-4"></div>
