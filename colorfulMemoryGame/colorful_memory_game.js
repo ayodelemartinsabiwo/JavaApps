@@ -34,6 +34,7 @@ function shuffle(array) {
         //generates a random index 'j'. This 'j' represents a random index within the array.
         //Math.random() generates a number between 0 (inclusive) and 1 (exclusive)
         //Multiplying by (i + 1) scales this to a number between 0 and i + 1 (exclusive)
+        // the +1 is added to include i in the randomness.but exclude i+1.
         const j = Math.floor(Math.random() * (i + 1));
         //swaps the elements at the 'i' and 'j' indices using array destructuring assignment:
         //This line efficiently swaps the values at positions 'i' and 'j' without requiring a temporary variable.
